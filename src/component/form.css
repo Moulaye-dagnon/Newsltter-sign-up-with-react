@@ -1,0 +1,39 @@
+form{
+	position: relative;
+	
+}
+label{
+	display: block;
+	color: #242742;
+	font-size: 0.75rem;
+	font-weight: bold;
+}
+input{
+	margin: 8px 0 24px 0;
+	width: 92%;
+	padding: 15px 0 15px 24px;
+	border-radius: 8px;
+	border: solid 1px #242742 ;
+}
+
+.btn{
+	width: 100%;
+	padding: 15px;
+	border-radius: 8px;
+	background-color: #242742;
+	border: none;
+	color: #fff;
+	font-weight: 700;
+}
+.btn:hover{
+	border-radius: 8px;
+	background:  linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%);
+	box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+}
+span{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 0.75rem;
+	color: #FF6155;
+}
