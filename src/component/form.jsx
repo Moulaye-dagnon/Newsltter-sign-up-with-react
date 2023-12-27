@@ -1,7 +1,7 @@
-import './form.css'
+import './formAndthanks.css'
 import { useState } from "react"
 
-export function Form(){
+export function Form({verif}){
 	
 	const [Valid , setValid] = useState(true)
 	const [mail, setmail] = useState('')
@@ -13,7 +13,10 @@ export function Form(){
 	}
 	const HandlerVerif = (e)=>{
 		e.preventDefault()
-		if(!Verificator(mail)){
+		if(Verificator(mail)){
+			verif(true)
+		}
+		else{
 			setValid(false)
 		}
 	}
@@ -31,5 +34,5 @@ export function Form(){
 				/>
 				<button className='btn' type="submit" >Subscribe to monthly newsletter</button>
 			</form>	
-				</>
+		</>
 }
