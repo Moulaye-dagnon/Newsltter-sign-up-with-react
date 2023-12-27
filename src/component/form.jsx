@@ -12,24 +12,24 @@ export function Form(){
 		return /\S+@\S+\.\S+/.test(email);
 	}
 	const HandlerVerif = (e)=>{
+		e.preventDefault()
 		if(!Verificator(mail)){
 			setValid(false)
-			e.preventDefault()
 		}
 	}
 	return <>
-			<form action="">
+			<form action="" onSubmit={HandlerVerif} >
 				<label htmlFor="email"> Email Adress </label> 
-				{!Valid && 	<span>Valid email required</span> }
+				{!Valid && 	<span aria-live="assertive">Valid email required</span> }
 				<input 
-				 	type="email"
+				 	type="text"
 				  	id="email" 
 					value={mail} 
 					placeholder='email@company.com'
 					onChange={(e) => setmail(e.target.value)}
 					style={{backgroundColor: !Valid ? "#FF6155": "" }}
 				/>
-				<button className='btn' type="submit" onClick={HandlerVerif} >Subscribe to monthly newsletter</button>
+				<button className='btn' type="submit" >Subscribe to monthly newsletter</button>
 			</form>	
 				</>
 }

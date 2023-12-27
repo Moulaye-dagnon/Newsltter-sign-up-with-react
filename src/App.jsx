@@ -5,10 +5,10 @@ import { Header } from './component/header'
 function App() {
 
   return (
-   <div className='container'>
-   <Header/>
-   <Content/>
-   </div>
+	<div className='container'>
+		<Header/>
+		<Content/>
+	</div>
   )
 }
 
