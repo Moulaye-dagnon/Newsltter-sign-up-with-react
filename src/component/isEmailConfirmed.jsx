@@ -1,6 +1,6 @@
 import './formAndthanks.css'
 import iconSuccess from "../../public/assets/images/icon-success.svg";
-export function ThanksPage({pageBack}) {
+export function EmailConfirmed({pageBack}) {
 	const handlpage = () =>{
 		pageBack(false)
 	}

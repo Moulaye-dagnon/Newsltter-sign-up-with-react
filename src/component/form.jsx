@@ -33,6 +33,7 @@ export function Form({verif}){
 					style={{backgroundColor: !Valid ? "#FF6155": "" }}
 				/>
 				<button className='btn' type="submit" >Subscribe to monthly newsletter</button>
-			</form>	
+			</form>
+				
 		</>
 }

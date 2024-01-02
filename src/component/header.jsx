@@ -8,5 +8,7 @@ export function Header(){
 			<source srcset={ImgDesktop} media="(min-width: 900px)" />
 			<img src={ImgMobile} alt="MDN" />
 		</picture>
+		
 	</div>
+	
 }

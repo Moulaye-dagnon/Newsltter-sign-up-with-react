@@ -3,7 +3,7 @@ import './App.css'
 import { Content } from './component/content'
 import { Form } from './component/form'
 import { Header } from './component/header'
-import { ThanksPage } from './component/thanks'
+import { EmailConfirmed } from './component/isEmailConfirmed'
 
 function App() {
 	const [showPage , setshowPage] = useState(false)
@@ -17,7 +17,8 @@ function App() {
 						<Form verif={setshowPage} />			
 					</div>
 				</div>
-			: <ThanksPage pageBack={setshowPage} />
+			:  <EmailConfirmed pageBack={setshowPage} />
+			
 		}
 	</>
   )
